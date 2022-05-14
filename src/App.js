@@ -18,7 +18,6 @@ function App() {
           <Route index element={<About/>} />
           <Route path="/" element={<App />} />
           <Route path={"/about"} element={<About />}></Route>
-          {/* <Route path={"/nav"} element={<Navbar />}></Route> */}
           {/* <Route path={"/nav"} element={<Navbar />}></Route>  */}
       </Routes>
       </BrowserRouter>
