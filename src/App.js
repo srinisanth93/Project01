@@ -11,13 +11,13 @@ function App() {
     <div>
     <Navbar></Navbar>
       <BrowserRouter>
-      <Link to="/about">About</Link>
+      {/* <Link to="/about">About</Link> */}
       <br></br>
-      <Link to="/nav">Navbar</Link>
+      {/* <Link to="/nav">Navbar</Link> */}
       <Routes>
           <Route index element={<About/>} />
-          <Route path="/" element={<App />} />
-          <Route path={"/about"} element={<About />}></Route>
+          {/* <Route path="/" element={<App />} /> */}
+          {/* <Route path={"/about"} element={<About />}></Route> */}
           {/* <Route path={"/nav"} element={<Navbar />}></Route>  */}
       </Routes>
       </BrowserRouter>
