@@ -1,0 +1,13 @@
+.contentPanel{
+    width: 100%;
+}
+
+.containers{
+    width: 90%;
+    /* background-color: aquamarine; */
+    margin-left:5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}

@@ -12,7 +12,7 @@ import About from './about/About';
 import './App.css'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Avatar from "@material-ui/core/Avatar";
-import SearchIcon from "@material-ui/icons/Search";
+import AllProducts from './products/AllProducts';
 function App() {
   return ( 
     <div>
@@ -21,10 +21,10 @@ function App() {
                <nav className="navbar navbar-expand-sm" id="navbar">
              <div className="container-fluid">	
             <div className="navbar-brand" id="header1" >
-                <img src={"https://www.whoa.in/download/lord-ayyappa-hd-images-wallpaper-lord-ayyappa-god-5-lord-ayyappa"} className={"header_logo"} alt={"image"}/>  Sree Ayyappa Automobiles
+                <img src={"https://www.whoa.in/download/lord-ayyappa-hd-images-wallpaper-lord-ayyappa-god-5-lord-ayyappa"} className={"header_logo"} alt={"image_2"}/>  Sree Ayyappa Automobiles
             </div>
             <ul className="navbar-nav" id="menubar">
-            <Link to={'/products'}> <li className="main-nav__item"><a className="nav-link" id="navitems" href="!#" style={{color:"white"}}>Products</a></li></Link>
+            <Link to={'/AllProducts'}> <li className="main-nav__item"><a className="nav-link" id="navitems" href="!#" style={{color:"white"}}>Products</a></li></Link>
              
               <Link to={'/about'}><li className="main-nav__item"><a className="nav-link" id="navitems" href="!#" style={{color:"white"}}>Contact us</a></li></Link>
               <Link to={'/my-cart'}><li className="main-nav__item"><a className="nav-link" id="navitems" href="!#" style={{color:"white"}}><ShoppingCartIcon className='shoppingcart' data-toggle="tooltip" data-placement="bottom" title="my cart"></ShoppingCartIcon></a></li></Link>
@@ -42,7 +42,7 @@ function App() {
        <Route path={"/my-cart"} element={<MyCart/>}></Route> 
        <Route path={"/users"} element={<User></User>}></Route> 
        <Route path={"/orders"} element={<Orders/>}></Route> 
-       <Route path={"/products"} element={<Products/>}></Route> 
+       <Route path={"/AllProducts"} element={<AllProducts/>}></Route> 
    </Routes>
    </BrowserRouter>
        
