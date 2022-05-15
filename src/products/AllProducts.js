@@ -7,13 +7,15 @@ function AllProducts() {
     let price="200"
   return (
       <div className='contentPanel'> 
-    <div className='containers'>
+    <div className='containers d-flex justify-content-around flex-wrap'>
        <Products Image={image} Name={name} Price={price}></Products>
        <Products Image={image} Name={name} Price={price}></Products>
        <Products Image={image} Name={name} Price={price}></Products>
        <Products Image={image} Name={name} Price={price}></Products>
        <Products Image={image} Name={name} Price={price}></Products>
-       <Products Image={image} Name={name} Price={price}></Products><Products Image={image} Name={name} Price={price}></Products>
+       <Products Image={image} Name={name} Price={price}></Products>
+       <Products Image={image} Name={name} Price={price}></Products>
+       <Products Image={image} Name={name} Price={price}></Products>
        <Products Image={image} Name={name} Price={price}></Products>
        <Products Image={image} Name={name} Price={price}></Products>
         </div>

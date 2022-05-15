@@ -1,30 +1,33 @@
 import React from 'react'
 import './Products.css'
+// import FavoriteIcon from '@mui/icons-material/Favorite';
+// import FavoriteIcon from '@material-ui/icons/FavoriteIcon';
+// import FavoriteIcon from "@material-ui/icons/FavoriteIcon";
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 function Products({
     Image,Name,Price
 }
-   
+  
 ) {
 
+  let fav=false; 
 
   return (
     
         
       <div>
-          <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <div class="card mb-30 mr-30">
-                <a class="card-img-tiles" href="#" data-abc="true">
-                <div>
-                  <div class="main-img"><img src="https://i.imgur.com/O0GMYuw.jpg" alt="Category"/></div>
-                </div>
-                </a>
-              <div class="card-body text-center">
-                <h4 class="card-title">Laptops</h4>
-                <p class="text-muted">Starting from $499</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">View Products</a>
-              </div>
-            </div>
+          <div className="row">
+              <div className="col-md-4 col-sm-6">
+          <div className="card my-3" style={{width: "16rem"}}>
+           <p className='d-flex pt-2 pl-2 m-0 float-right '> <FavoriteBorderIcon className='favouriteicon'></FavoriteBorderIcon></p>
+          <img src={Image} className="card-img-top" alt={"hello"}/>
+          <div className="card-body text-center">
+            <h3 className="card-title ">{Name}</h3>
+            <p>Starting at Rs {Price}</p>
+
           </div>
+</div>
+              </div>
           </div>
     </div>
   )
