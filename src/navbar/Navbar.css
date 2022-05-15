@@ -1,0 +1,10 @@
+
+    .header_right{
+        display: flex;
+        align-items: center;
+        /* width: 15%; */
+        justify-content: space-evenly;
+    }
+    .header_right>div{
+        margin-right: 10px;
+    }
