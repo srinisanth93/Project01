@@ -2,3 +2,9 @@
 .favouriteicon{
     color: red;
 }
+.favouriteicon:hover{
+    cursor: pointer;
+}
+.card:hover{
+    cursor: pointer;
+}
